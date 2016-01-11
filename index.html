@@ -38,110 +38,38 @@
     </nav>
     <h1>Learn Your Chances of Getting into an Elite College</h1>
 
-    <div>
-      <form class="form-horizontal">
-      <fieldset>
-
-
-      <!-- change col-sm-N to reflect how you would like your column spacing (http://getbootstrap.com/css/#forms-control-sizes) -->
-
-
-      <!-- Form Name -->
-      <legend>Try it now:</legend>
-
-      <!-- Fuel UX Select http://getfuelux.com/javascript.html#selectlist -->
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="sat">SAT Score</label>
-        <div class="controls text-left col-sm-10">
-          <div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="sat">
-            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-              <span class="selected-label">&nbsp;</span>
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-              <li data-value="I did take the SAT..."><a href="#">I did take the SAT...</a></li>
-              <li data-value="2400"><a href="#">2400</a></li>
-              <li data-value="2380"><a href="#">2380</a></li>
-              <li data-value="1800"><a href="#">1800</a></li>
-              <li data-value="1200"><a href="#">1200</a></li>
-            </ul>
-            <input class="hidden hidden-field" name="sat" readonly="readonly" aria-hidden="true" type="text">
-          </div>
-          <p class="help-block">help</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Try it now</h3>
+            </div>
+      <form role="form">
+        <div class="form-group">
+          <label for="sat1">SAT Composite Score:</label>
+          <select class="form-control" id="sat1">
+            <option>2400</option>
+            <option>2380</option>
+            <option>1800</option>
+            <option>1200</option>
+          </select>
         </div>
-      </div>
-      <!-- Fuel UX Select http://getfuelux.com/javascript.html#selectlist -->
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="act">ACT Score</label>
-        <div class="controls text-left col-sm-10">
-          <div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="act">
-            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-              <span class="selected-label">&nbsp;</span>
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-              <li data-value="I didn't take the ACT..."><a href="#">I didn't take the ACT...</a></li>
-              <li data-value="36"><a href="#">36</a></li>
-              <li data-value="33"><a href="#">33</a></li>
-              <li data-value="30"><a href="#">30</a></li>
-              <li data-value="20"><a href="#">20</a></li>
-            </ul>
-            <input class="hidden hidden-field" name="act" readonly="readonly" aria-hidden="true" type="text">
-          </div>
-          <p class="help-block">help</p>
+        <div class="form-group">
+          <label for="act1">ACT Composite Score:</label>
+          <select class="form-control" id="act1">
+            <option>36</option>
+            <option>33</option>
+            <option>28</option>
+            <option>18</option>
+          </select>
         </div>
-      </div>
-      <!-- Fuel UX Select http://getfuelux.com/javascript.html#selectlist -->
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="gpa">GPA</label>
-        <div class="controls text-left col-sm-10">
-          <div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="gpa">
-            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-              <span class="selected-label">&nbsp;</span>
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-              <li data-value="4.0"><a href="#">4.0</a></li>
-              <li data-value="3.9"><a href="#">3.9</a></li>
-              <li data-value="3.5"><a href="#">3.5</a></li>
-              <li data-value="3.0"><a href="#">3.0</a></li>
-              <li data-value="2.5"><a href="#">2.5</a></li>
-            </ul>
-            <input class="hidden hidden-field" name="gpa" readonly="readonly" aria-hidden="true" type="text">
-          </div>
-          <p class="help-block">help</p>
-        </div>
-      </div>
-      <!-- Fuel UX Select http://getfuelux.com/javascript.html#selectlist -->
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="apexams">Number of AP exams taken</label>
-        <div class="controls text-left col-sm-10">
-          <div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="apexams">
-            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-              <span class="selected-label">&nbsp;</span>
-              <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-              <li data-value="0"><a href="#">0</a></li>
-              <li data-value="1"><a href="#">1</a></li>
-              <li data-value="2"><a href="#">2</a></li>
-              <li data-value="5"><a href="#">5</a></li>
-              <li data-value="10"><a href="#">10</a></li>
-            </ul>
-            <input class="hidden hidden-field" name="apexams" readonly="readonly" aria-hidden="true" type="text">
-          </div>
-          <p class="help-block">help</p>
-        </div>
-      </div>
-
-      </fieldset>
+        <button type="submit" class="btn btn-default">What are my chances?</button>
       </form>
-
     </div>
+  </div>
+</div>
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
