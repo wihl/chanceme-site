@@ -9,7 +9,16 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+    <style>
+      h1 {
+	       font-family: "proxima-nova", "League Spartan", "Avenir Black", "futura_md_btbold", "Arial", "sans-serif";
+	       color: black;
+	       margin-left: auto;
+	       margin-right: auto;
+         text-transform: uppercase;
+         width: 66%;
+       }
+    </style>
     <title>ChanceMe - college admissions predictions</title>
   </head>
   <body>
@@ -27,7 +36,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html"><img style="max-width:100px; margin-top: -7px;"
+                       src="img/logo.png" alt="Home"></a></li>
                     <li><a href="overview.html">Overview</a></li>
                     <li><a href="howitworks.html">How It Works</a></li>
                     <li><a href="related.html">Related Sites</a></li>
@@ -41,35 +51,95 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
+          <p>
+            The application process is opaque. Hard working students send off
+            their applications and wait for months for a reply. We want to
+            reduce some of that stress by showing the factors that influence
+            your acceptance.
+          </p>
+          <p>
+            We have analyzed the acceptance results for 5000 students making
+            15000 college applications to the top 25 U.S. Colleges. From this
+            we have built a series of statistical models to predict the
+            probabilities of being accepted at an elite school. Try it out!
+          </p>
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Try it now</h3>
             </div>
-      <form role="form">
-        <div class="form-group">
-          <label for="sat1">SAT Composite Score:</label>
-          <select class="form-control" id="sat1">
-            <option>2400</option>
-            <option>2380</option>
-            <option>1800</option>
-            <option>1200</option>
-          </select>
+              <form role="form">
+                <div class="form-group">
+                  <label for="sat">SAT Composite Score:</label>
+                  <select class="form-control" id="sat">
+                    <option>2400</option>
+                    <option>2380</option>
+                    <option>1800</option>
+                    <option>1200</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="act">ACT Composite Score:</label>
+                  <select class="form-control" id="act">
+                    <option>36</option>
+                    <option>33</option>
+                    <option>28</option>
+                    <option>18</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="gpa">GPA (unweighted):</label>
+                  <select class="form-control" id="gpa">
+                    <option>4.0</option>
+                    <option>3.9</option>
+                    <option>3.8</option>
+                    <option>3.0</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="apnum">Number of AP exams taken:</label>
+                  <select class="form-control" id="apnum">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="college">Which college are you applying to:</label>
+                  <select class="form-control" id="college">
+                    <option value="Brown">Brown</option>
+                    <option value="CalTech">CalTech</option>
+                    <option value="CarnegieMellon">CarnegieMellon</option>
+                    <option value="Columbia">Columbia</option>
+                    <option value="Cornell">Cornell</option>
+                    <option value="Dartmouth">Dartmouth</option>
+                    <option value="Duke">Duke</option>
+                    <option value="Emory">Emory</option>
+                    <option value="Georgetown">Georgetown</option>
+                    <option value="Harvard">Harvard</option>
+                    <option value="JohnsHopkins">JohnsHopkins</option>
+                    <option value="MIT">MIT</option>
+                    <option value="Northwestern">Northwestern</option>
+                    <option value="NotreDame">NotreDame</option>
+                    <option value="Princeton">Princeton</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Stanford">Stanford</option>
+                    <option value="UCB">UCB</option>
+                    <option value="UChicago">UChicago</option>
+                    <option value="UCLA">UCLA</option>
+                    <option value="UPenn">UPenn</option>
+                    <option value="USC">USC</option>
+                    <option value="Vanderbilt">Vanderbilt</option>
+                    <option value="WashU">WashU</option>
+                    <option value="Yale">Yale</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-default">What are my chances?</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="act1">ACT Composite Score:</label>
-          <select class="form-control" id="act1">
-            <option>36</option>
-            <option>33</option>
-            <option>28</option>
-            <option>18</option>
-          </select>
         </div>
-        <button type="submit" class="btn btn-default">What are my chances?</button>
-      </form>
-    </div>
-  </div>
-</div>
-</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
