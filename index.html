@@ -52,44 +52,32 @@
     </style>
     <title>ChanceMe - college admissions predictions</title>
     <script>
-    // From http://stackoverflow.com/questions/8674618/adding-options-to-select-with-javascript
-    function populateSelect(target, min, max, inc){
-    if (!target){
-        return false;
-    }
-    else {
-        var min = min || 0,
-            max = max || min + 100,
-            inc = inc || 1;
-
-        select = document.getElementById(target);
-
-        for (var i = min; i<=max; i += inc){
-            var opt = document.createElement('option');
-            opt.value = i;
-            opt.innerHTML = i;
-            select.appendChild(opt);
+      // From http://stackoverflow.com/questions/8674618/adding-options-to-select-with-javascript
+      function populateSelect(target, min, max, inc){
+      if (!target){
+          return false;
       }
-    }
-  }
-  $(document).ready(function() {
-    populateSelect('sat',600,2400,10);
-    populateSelect('act',1,36);
-    populateSelect('apnum',0,10);
-    populateSelect('sat2ave',0,10);
+      else {
+          var min = min || 0,
+              max = max || min + 100,
+              inc = inc || 1;
 
+          select = document.getElementById(target);
 
-
-
-  });
-// calling the function with all three values:
-
-
-// calling the function with only the 'id' ('min' and 'max' are set to defaults):
-//populateSelect('anotherSelect');
-
-// calling the function with the 'id' and the 'min' (the 'max' is set to default):
-//populateSelect('moreSelects', 50);
+          for (var i = min; i<=max; i += inc){
+              var opt = document.createElement('option');
+              opt.value = i;
+              opt.innerHTML = i;
+              select.appendChild(opt);
+          }
+        }
+      }
+      $(document).ready(function() {
+        populateSelect('sat',600,2400,10);
+        populateSelect('act',1,36);
+        populateSelect('apnum',0,10);
+        populateSelect('sat2ave',0,10);
+      });
     </script>
   </head>
   <body>
@@ -127,7 +115,7 @@
             probabilities of being accepted at an elite school.
             <a href="howitworks.html">Learn more</a>
           </p>
-          <div class="panel panel-primary col-md-offset-2 col-md-8 col-xs-offset-2 col-xs-8">
+          <div class="panel panel-primary col-md-offset-2 col-md-8 col-xs-offset-2 col-xs-10">
             <div class="panel-heading">
               <h3 class="panel-title">Try it now</h3>
             </div>
@@ -245,7 +233,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="race">What gender do you identify as?</label>
+                <label for="race">What ethnicity do you identify as?</label>
                 <select class="form-control" id="race">
                   <option value="1">African American/Black</option>
                   <option value="2">Hispanic/Latino</option>
@@ -254,7 +242,8 @@
                   <option value="3">Pacific Islander</option>
                   <option value="4">Native American</option>
                   <option value="-2" selected>White</option>
-                  <option value="5">Other</option>                </select>
+                  <option value="5">Other</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="college">Which college are you applying to:</label>
